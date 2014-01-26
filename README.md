@@ -4,6 +4,10 @@ Google Glass Progress Bar
 As of now, Google Glass GDK API has no Progress Bar view. 
 So I extracted this from GlassHome.apk (from https://github.com/zhuowei/Xenologer).
 
+<p align="center">
+    <img src="http://i.imgur.com/G9M1Tok.gif" border="1" alt="google glass progress bar demo">
+</p>
+
 
 Features
 --------
