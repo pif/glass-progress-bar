@@ -4,5 +4,6 @@
     <string name="app_name">testwithlibrary</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="demo_progress_bar">show progress bar</string>
 
 </resources>

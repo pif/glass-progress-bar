@@ -4,11 +4,6 @@
     android:layout_height="match_parent"
     android:background="@android:color/black">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
     <com.google.glass.widget.SliderView
         android:id="@+id/indeterm_slider"
         android:layout_width="fill_parent"
@@ -20,5 +15,12 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/hello_world" />
 
 </RelativeLayout>
