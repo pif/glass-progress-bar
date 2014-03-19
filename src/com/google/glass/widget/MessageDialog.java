@@ -18,12 +18,15 @@ import com.google.android.glass.touchpad.Gesture;
 import com.google.android.glass.touchpad.GestureDetector;
 
 public final class MessageDialog extends Dialog {
-	private static final long EXPANDED_MESSAGE_DURATION = 5000L;
-	private static final long MESSAGE_DURATION = 10000L;
+	// States
 	private static final int MSG_DISMISS = 0;
 	private static final int MSG_TEMPORARY_MESSAGE_DONE = 1;
 	private static final int MSG_ON_DONE = 2;
+
+	private static final long EXPANDED_MESSAGE_DURATION = 5000L;
+	private static final long MESSAGE_DURATION = 2500L;
 	private static final String TAG = MessageDialog.class.getSimpleName();
+	// Shown, when progress bar is switched on.
 	private static final long TEMPORARY_MESSAGE_DURATION = 5000L;
 	
 	private final Handler handler = new Handler() {
@@ -192,10 +195,11 @@ public final class MessageDialog extends Dialog {
 				getSlider().setVisibility(View.VISIBLE);
 				getSlider().startIndeterminate();
 			}
-		} else if (this.params.shouldAutoHide) {
+		} 
+		if (this.params.shouldAutoHide) {
 			if (!this.params.isExpanded) {
 				this.handler.sendMessageDelayed(
-						Message.obtain(this.handler, MSG_DISMISS), TEMPORARY_MESSAGE_DURATION);
+						Message.obtain(this.handler, MSG_DISMISS), MESSAGE_DURATION);
 			}
 			getSlider().setVisibility(View.GONE);
 		}

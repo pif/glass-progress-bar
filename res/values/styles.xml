@@ -2,13 +2,13 @@
 <resources>
 
     <style name="OverlayText">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:shadowColor">@*android:color/black</item>
-        <item name="android:shadowDx">1.0</item>
-        <item name="android:shadowDy">1.0</item>
-        <item name="android:shadowRadius">1.0</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        
     </style>
-
+<!-- <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item> -->
     <style name="LargeOverlayText" parent="@style/OverlayText">
         <item name="android:textSize">@dimen/large_text_size</item>
     </style>
@@ -21,17 +21,17 @@
         <item name="android:textSize">@dimen/small_text_size</item>
     </style>
 
-    <style name="Animation.ContextualDialog" parent="@android:style/Animation">
+    <style name="ContextualDialog" >
         <item name="android:windowEnterAnimation">@anim/show_contextual</item>
         <item name="android:windowExitAnimation">@anim/hide_contextual</item>
     </style>
 
-    <style name="ContextualDialogTheme" parent="@android:style/Theme">
+    <style name="ContextualDialogTheme">
         <item name="android:backgroundDimAmount">@dimen/background_dim_amount</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@style/Animation.ContextualDialog</item>
+        <item name="android:windowAnimationStyle">@style/ContextualDialog</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
