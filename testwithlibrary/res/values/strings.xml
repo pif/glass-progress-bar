@@ -4,6 +4,16 @@
     <string name="app_name">testwithlibrary</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="hello_dialog">Hello dialog!</string>
+    
     <string name="demo_progress_bar">show progress bar</string>
-
+	<string name="demo_message_dialog">show dialog</string>
+	
+	<string name="dlg_message">success</string>
+	<string name="dlg_secondary_message">new world conquered</string>
+	<string name="dlg_temp_message">conquering</string>
+	<string name="dlg_temp_secondary_message">another world</string>
+	
+	
+	
 </resources>
